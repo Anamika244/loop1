@@ -1,0 +1,26 @@
+#include<stdio.h> 
+main()
+{
+    int i,j,k,rows,count,t=1,tn=1;
+    printf("Enter number of stairs required:");
+    scanf("%d",&rows);
+    count=rows-1;
+    
+    for(i=1;i<=rows;i++)
+    {
+        for(j=1;j<=count;j++)
+        {
+            printf(" ");
+            
+        }
+        for(k=1;k<=t;k++)
+        {
+           printf("%d",tn%2);
+            tn++;
+        }
+        count--;
+        t+=2;
+    
+        printf("\n");
+    }    
+}
